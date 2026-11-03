@@ -28,3 +28,4 @@ Thumbs.db
 # Configuración del editor
 .vscode/
 .idea/
+/src/generated/prisma
