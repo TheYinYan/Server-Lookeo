@@ -4,6 +4,29 @@ API REST backend del proyecto intermodular **Lookeo** (DAM). Expone autenticaci�
 
 Estado actual (tag `v0.2.0`): base del servidor + módulo de auth y usuarios.
 
+---
+
+## 👥 Equipo
+
+| Nombre   | Rol            | GitHub                                     |
+| -------- | -------------- | ------------------------------------------ |
+| Samuel   | Desarrollador  | [@TheYinYan](https://github.com/TheYinYan) |
+| Mari Paz | Desarrolladora | [@mpjmar](https://github.com/mpjmar)       |
+
+> Los roles son orientativos y se pueden rotar durante el proyecto.
+
+---
+
+
+## 🧩 Repositorios del proyecto
+
+| Repo | Descripción | Enlace |
+|------|-------------|--------|
+| **Principal** | Descripción del proyecto       | [Enlace](https://github.com/TheYinYan/Proyecto_Intermodular) |
+| **Lookeo-Móvil** | App móvil                   | [Enlace](https://github.com/TheYinYan/Lookeo-Movil) |
+| **Lookeo-Web** | App web                       | [Enlace](https://github.com/TheYinYan/Lookeo-Web) |
+| _Server-Lookeo_| Servidor/API REST (este repo) | [Enlace](https://github.com/TheYinYan/Server-Lookeo)         |
+
 ## Stack
 
 | Área | Tecnología |
