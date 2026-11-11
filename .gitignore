@@ -29,3 +29,6 @@ Thumbs.db
 .vscode/
 .idea/
 /src/generated/prisma
+
+# Guía de estudio del proyecto
+GUIA_ESTUDIO_SERVER.md
