@@ -6,7 +6,7 @@ const PORT = env.PORT;
 
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
-  console.log(`Servidor corriendo en http://localhost:${PORT}/users`);
-  
+  console.log(`Servidor corriendo en http://localhost:${PORT}/api/users`);
+
   console.log(`Entorno: ${env.NODE_ENV}`);
 });
