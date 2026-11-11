@@ -12,8 +12,8 @@ app.use(cors());
 app.use(morgan("dev"));
 app.use(express.json());
 
-app.use("/auth", authRoutes);
-app.use("/users", usersRoutes);
+app.use("/api/auth", authRoutes);
+app.use("/api/users", usersRoutes);
 
 app.get("/health", (req, res) => {
   res.json({ status: "ok", message: "Lookeo API funcionando" });
