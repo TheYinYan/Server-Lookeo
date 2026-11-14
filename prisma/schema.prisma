@@ -14,9 +14,23 @@ datasource db {
 }
 
 model User {
-  id           Int      @id @default(autoincrement())
-  email        String   @unique
-  name         String
-  passwordHash String
-  createdAt    DateTime @default(now())
+  id            Int       @id @default(autoincrement())
+  email         String    @unique
+  name          String
+  passwordHash  String
+  createdAt     DateTime  @default(now())
+  items         Item[]
+}
+
+model Item {
+  id          Int       @id @default(autoincrement())
+  type        String
+  color       String
+  season      String
+  style       String
+  imgUrl      String
+  notes       String?
+  createdAt   DateTime  @default(now())
+  userId      Int
+  user        User      @relation(fields: [userId], references: [id])
 }
