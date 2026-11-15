@@ -1,5 +1,0 @@
--- AlterTable
-ALTER TABLE "Item"
-ALTER COLUMN "color" TYPE TEXT[],
-ALTER COLUMN "style" TYPE TEXT[],
-ALTER COLUMN "imgUrl" TYPE TEXT[];
