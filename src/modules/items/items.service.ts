@@ -1,20 +1,12 @@
 import { prisma } from "../../config/db.js";
 import { Prisma } from "@prisma/client";
 import { AppError } from "../../utils/AppError.js";
-import e from "express";
+import type { CreateItemInput, UpdateItemInput } from "./items.schema.js";
 
-export async function createItem(
-  userId: number,
-  type: string,
-  color: string,
-  season: string,
-  style: string,
-  imgUrl: string,
-  notes: string,
-) {
+export async function createItem(userId: number, data: CreateItemInput) {
   try {
     return await prisma.item.create({
-      data: { userId, type, color, season, style, imgUrl, notes },
+      data: { userId, ...data },
       select: {
         id: true,
         type: true,
@@ -32,6 +24,7 @@ export async function createItem(
       }
       throw error;
     }
+    throw error;
   }
 }
 
@@ -75,14 +68,7 @@ export async function listItems(userId: number) {
 export async function updateItem(
   id: number,
   userId: number,
-  data: {
-    type?: string;
-    color?: string;
-    season?: string;
-    style?: string;
-    imgUrl?: string;
-    notes?: string;
-  },
+  data: UpdateItemInput,
 ) {
   try {
     return await prisma.item.update({
@@ -106,6 +92,7 @@ export async function updateItem(
       }
       throw error;
     }
+    throw error;
   }
 }
 
@@ -119,5 +106,6 @@ export async function deleteItem(id: number, userId: number) {
       }
       throw error;
     }
+    throw error;
   }
 }

@@ -25,10 +25,10 @@ model User {
 model Item {
   id          Int       @id @default(autoincrement())
   type        String
-  color       String
-  season      String
-  style       String
-  imgUrl      String
+  color       String[]
+  season      String[]
+  style       String[]
+  imgUrl      String[]
   notes       String?
   createdAt   DateTime  @default(now())
   userId      Int
