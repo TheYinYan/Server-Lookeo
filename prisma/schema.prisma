@@ -14,7 +14,7 @@ datasource db {
 }
 
 model User {
-  id            BigInt    @id @default(autoincrement())
+  id            Int       @id @default(autoincrement())
   email         String    @unique
   name          String
   passwordHash  String
@@ -24,7 +24,7 @@ model User {
 }
 
 model Item {
-  id          BigInt       @id @default(autoincrement())
+  id          Int         @id @default(autoincrement())
   type        String
   color       String[]
   season      String[]
@@ -32,6 +32,6 @@ model Item {
   imgUrl      String[]
   notes       String?
   createdAt   DateTime  @default(now())
-  userId      BigInt
+  userId      Int
   user        User      @relation(fields: [userId], references: [id])
 }
