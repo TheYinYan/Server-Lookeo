@@ -1,6 +1,5 @@
 import express from "express";
 import cors from "cors";
-import helmet from "helmet";
 import morgan from "morgan";
 import authRoutes from "./modules/auth/auth.routes.js";
 import usersRoutes from "./modules/users/users.routes.js";
@@ -10,7 +9,6 @@ import { errorHandler } from "./middlewares/errorHandler.js";
 
 export const app = express();
 
-app.use(helmet());
 app.use(cors());
 app.use(morgan("dev"));
 app.use(express.json());
