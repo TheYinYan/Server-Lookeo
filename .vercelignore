@@ -12,7 +12,6 @@ logs
 .DS_Store
 *.md
 !README.md
-src
 tests
 docker-compose.yml
 Dockerfile
